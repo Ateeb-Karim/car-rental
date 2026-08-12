@@ -1,5 +1,3 @@
-import { StaticImageData } from "next/image";
-
 export type CarType =
   | "Sedan"
   | "SUV"
@@ -25,7 +23,7 @@ export interface Car {
   year: number;
   features: string[];
   available: boolean;
-  image: StaticImageData;
+  image: string | undefined;
 }
 
 export interface CarFilters {

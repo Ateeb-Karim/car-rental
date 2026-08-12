@@ -1,21 +1,30 @@
+"use server";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Car } from "@/types/car";
+import { GetCarByType } from "@/server-action/action";
+import { CarBrand } from "@/data/carbrand";
 
-const SHOWROOM_IMAGE =
-  "https://images.unsplash.com/photo-1767907571229-01cf4ba03590?auto=format&fit=crop&w=1600&q=80";
+type carbrandType = {
+  name1: string;
+  name2?: string;
+  name3?: string;
+};
 
-export default function CarCard({ car }: { car: Car }) {
+export default async function CarCard({ car }: { car: Car }) {
+  // const carImage = await GetCarByType(carName);
+
   return (
     <div className="bg-surface border border-border rounded-card overflow-hidden flex flex-col hover:shadow-glow transition-shadow duration-200">
       <div className="relative aspect-16/10 bg-surfaceAlt overflow-hidden">
-        <Image
-          src={SHOWROOM_IMAGE}
+        {/* <Image
+          src={}
           alt={car.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"
-        />
+        /> */}
 
         {!car.available && (
           <span className="absolute top-3 left-3 bg-danger/15 text-danger text-xs font-medium px-2 py-1 rounded">
@@ -60,7 +69,7 @@ export default function CarCard({ car }: { car: Car }) {
           </div>
 
           <Link
-            href={car.available ? `/cars/${car.id}` : "#"}
+            href={car.available ? `/car/${car.id}` : "#"}
             aria-disabled={!car.available}
             className={
               car.available

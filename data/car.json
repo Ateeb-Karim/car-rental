@@ -1,6 +1,6 @@
 [
   {
-    "id": "car_001",
+    "id": "01",
     "name": "Toyota Corolla",
     "brand": "Toyota",
     "type": "Sedan",
@@ -15,7 +15,7 @@
     "available": true
   },
   {
-    "id": "car_002",
+    "id": "02",
     "name": "Honda Civic",
     "brand": "Honda",
     "type": "Sedan",
@@ -30,7 +30,7 @@
     "available": true
   },
   {
-    "id": "car_003",
+    "id": "03",
     "name": "Suzuki Alto",
     "brand": "Suzuki",
     "type": "Hatchback",
@@ -45,7 +45,7 @@
     "available": true
   },
   {
-    "id": "car_004",
+    "id": "04",
     "name": "Toyota Fortuner",
     "brand": "Toyota",
     "type": "SUV",
@@ -60,7 +60,7 @@
     "available": true
   },
   {
-    "id": "car_005",
+    "id": "05",
     "name": "Kia Sportage",
     "brand": "Kia",
     "type": "SUV",
@@ -75,7 +75,7 @@
     "available": true
   },
   {
-    "id": "car_006",
+    "id": "06",
     "name": "Mercedes-Benz C-Class",
     "brand": "Mercedes-Benz",
     "type": "Luxury",
@@ -90,7 +90,7 @@
     "available": true
   },
   {
-    "id": "car_007",
+    "id": "07",
     "name": "BMW 5 Series",
     "brand": "BMW",
     "type": "Luxury",
@@ -105,7 +105,7 @@
     "available": false
   },
   {
-    "id": "car_008",
+    "id": "08",
     "name": "Suzuki Cultus",
     "brand": "Suzuki",
     "type": "Hatchback",
@@ -120,7 +120,7 @@
     "available": true
   },
   {
-    "id": "car_009",
+    "id": "09",
     "name": "Honda BR-V",
     "brand": "Honda",
     "type": "SUV",
@@ -135,7 +135,7 @@
     "available": true
   },
   {
-    "id": "car_010",
+    "id": "10",
     "name": "Tesla Model 3",
     "brand": "Tesla",
     "type": "Electric",
@@ -150,7 +150,7 @@
     "available": true
   },
   {
-    "id": "car_011",
+    "id": "11",
     "name": "Toyota Yaris",
     "brand": "Toyota",
     "type": "Sedan",
@@ -165,7 +165,7 @@
     "available": true
   },
   {
-    "id": "car_012",
+    "id": "12",
     "name": "Range Rover Evoque",
     "brand": "Land Rover",
     "type": "Luxury",
@@ -180,7 +180,7 @@
     "available": true
   },
   {
-    "id": "car_013",
+    "id": "13",
     "name": "Hyundai Elantra",
     "brand": "Hyundai",
     "type": "Sedan",
@@ -195,7 +195,7 @@
     "available": true
   },
   {
-    "id": "car_014",
+    "id": "14",
     "name": "Suzuki APV",
     "brand": "Suzuki",
     "type": "Van",
@@ -210,7 +210,7 @@
     "available": true
   },
   {
-    "id": "car_015",
+    "id": "15",
     "name": "Nissan Leaf",
     "brand": "Nissan",
     "type": "Electric",
