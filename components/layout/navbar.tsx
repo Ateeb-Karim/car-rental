@@ -21,7 +21,7 @@ export default function Navbar() {
           className="font-display text-xl font-bold text-text tracking-tight flex items-center gap-2"
         >
           <span className="w-2 h-2 rounded-full bg-accent shadow-[0_0_10px_#ffb400]" />
-          Drift
+          Car Rentals
         </Link>
 
         <div className="hidden sm:flex items-center gap-1">
