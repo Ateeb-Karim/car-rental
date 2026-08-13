@@ -16,25 +16,12 @@ export function generateStaticParams() {
 }
 
 export default async function CarPage({ params }: CarDetailPageProps) {
-  const paramID = params.id;
+  const paramID = (await params).id;
   const car = cars.find((c) => c.id === paramID) as Car;
 
   if (!car) {
     notFound();
   }
-
-  async function GetcarImage() {
-    try {
-      const data = await GetCarByType(car.type);
-      return data[0].urls.regular;
-    } catch (err) {
-      if (err instanceof Error) {
-        console.log("cannot fetch image.", err);
-      }
-    }
-  }
-
-  const carImage = (await GetcarImage()) as string;
 
   const relatedCars = cars
     .filter((c) => c.type === car.type && c.id !== car.id)
@@ -49,7 +36,7 @@ export default async function CarPage({ params }: CarDetailPageProps) {
       <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 mt-6">
         <div className="relative aspect-16/10 rounded-card overflow-hidden border border-border">
           <Image
-            src={carImage}
+            src={car.image}
             alt={car.name}
             fill
             sizes="(max-width: 1024px) 100vw, 60vw"

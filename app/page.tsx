@@ -32,16 +32,21 @@ export default function HomePage() {
       <Hero />
       <Category />
       <FeaturedCars />
-      {trustdata.map((item) => {
-        return (
-          <TrustItem
-            key={item.title}
-            icon={item.icon}
-            title={item.title}
-            body={item.body}
-          />
-        );
-      })}
+
+      <section className="px-6 py-16 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {trustdata.map((item) => {
+            return (
+              <TrustItem
+                key={item.title}
+                icon={item.icon}
+                title={item.title}
+                body={item.body}
+              />
+            );
+          })}
+        </div>
+      </section>
     </main>
   );
 }

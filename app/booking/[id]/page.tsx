@@ -77,7 +77,9 @@ export default function BookingPage() {
   }
 
   function handleConfirm() {
-    router.push(`/booking/${params.id}/confirmed`);
+    router.push(
+      `/booking/${encodeURIComponent(params.id)}/confirmed/search/${encodeURIComponent(form.pickupDate)}&returnDate=${encodeURIComponent(form.returnDate)}&pickupLocation=${encodeURIComponent(form.pickupLocation)}&name=${encodeURIComponent(form.customer.name)}&email=${encodeURIComponent(form.customer.email)}&phone=${encodeURIComponent(form.customer.phone)}&days=${encodeURIComponent(days.toString())}&total=${encodeURIComponent(totalPrice.toString())}`,
+    );
   }
 
   return (

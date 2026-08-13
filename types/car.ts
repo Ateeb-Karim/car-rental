@@ -23,7 +23,7 @@ export interface Car {
   year: number;
   features: string[];
   available: boolean;
-  image: string | undefined;
+  image: string;
 }
 
 export interface CarFilters {

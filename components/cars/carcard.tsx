@@ -1,30 +1,18 @@
-"use server";
-
 import Link from "next/link";
 import Image from "next/image";
 import { Car } from "@/types/car";
-import { GetCarByType } from "@/server-action/action";
-import { CarBrand } from "@/data/carbrand";
 
-type carbrandType = {
-  name1: string;
-  name2?: string;
-  name3?: string;
-};
-
-export default async function CarCard({ car }: { car: Car }) {
-  // const carImage = await GetCarByType(carName);
-
+export default function CarCard({ car }: { car: Car }) {
   return (
     <div className="bg-surface border border-border rounded-card overflow-hidden flex flex-col hover:shadow-glow transition-shadow duration-200">
       <div className="relative aspect-16/10 bg-surfaceAlt overflow-hidden">
-        {/* <Image
-          src={}
+        <Image
+          src={car.image}
           alt={car.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"
-        /> */}
+        />
 
         {!car.available && (
           <span className="absolute top-3 left-3 bg-danger/15 text-danger text-xs font-medium px-2 py-1 rounded">

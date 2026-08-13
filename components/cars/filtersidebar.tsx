@@ -88,25 +88,6 @@ export default function FilterSidebar() {
       </div>
       <div>
         <label className="text-textMuted text-sm font-medium mb-2 block">
-          Max price/day: ${filters.priceRange[1]}
-        </label>
-        <input
-          type="range"
-          min={200}
-          max={10000}
-          step={10}
-          value={filters.priceRange[1]}
-          onChange={(e) =>
-            setFilters((prev: CarFilters) => ({
-              ...prev,
-              price: [prev.priceRange[0], Number(e.target.value)],
-            }))
-          }
-          className="w-full accent-accent"
-        />
-      </div>
-      <div>
-        <label className="text-textMuted text-sm font-medium mb-2 block">
           Min Seats
         </label>
         <div className="flex gap-2">

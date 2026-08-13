@@ -12,7 +12,8 @@
     "location": "Islamabad",
     "year": 2023,
     "features": ["AC", "Bluetooth", "Cruise Control"],
-    "available": true
+    "available": true,
+    "image": "/images/toyota-corolla.jpg"
   },
   {
     "id": "02",
@@ -27,7 +28,8 @@
     "location": "Lahore",
     "year": 2022,
     "features": ["AC", "Bluetooth", "Sunroof"],
-    "available": true
+    "available": true,
+    "image": "/images/honda-civic.jpg"
   },
   {
     "id": "03",
@@ -42,7 +44,8 @@
     "location": "Islamabad",
     "year": 2021,
     "features": ["AC"],
-    "available": true
+    "available": true,
+    "image": "/images/suzuki-alto.jpg"
   },
   {
     "id": "04",
@@ -57,7 +60,8 @@
     "location": "Karachi",
     "year": 2023,
     "features": ["AC", "4WD", "Leather Seats", "Bluetooth"],
-    "available": true
+    "available": true,
+    "image": "/images/toyota-fortuner.jpg"
   },
   {
     "id": "05",
@@ -72,7 +76,8 @@
     "location": "Lahore",
     "year": 2022,
     "features": ["AC", "Bluetooth", "Rear Camera"],
-    "available": true
+    "available": true,
+    "image": "/images/kia-sportage.jpg"
   },
   {
     "id": "06",
@@ -87,7 +92,8 @@
     "location": "Islamabad",
     "year": 2023,
     "features": ["AC", "Leather Seats", "Sunroof", "GPS", "Bluetooth"],
-    "available": true
+    "available": true,
+    "image": "/images/mercedes.jpg"
   },
   {
     "id": "07",
@@ -102,7 +108,8 @@
     "location": "Karachi",
     "year": 2022,
     "features": ["AC", "Leather Seats", "GPS", "Heated Seats"],
-    "available": false
+    "available": false,
+    "image": "/images/bmw-5-series.jpg"
   },
   {
     "id": "08",
@@ -117,7 +124,8 @@
     "location": "Lahore",
     "year": 2021,
     "features": ["AC", "Bluetooth"],
-    "available": true
+    "available": true,
+    "image": "/images/suzuki-cultus.jpg"
   },
   {
     "id": "09",
@@ -132,7 +140,8 @@
     "location": "Islamabad",
     "year": 2022,
     "features": ["AC", "Bluetooth", "Rear Camera"],
-    "available": true
+    "available": true,
+    "image": "/images/honda-brv.jpg"
   },
   {
     "id": "10",
@@ -147,7 +156,8 @@
     "location": "Karachi",
     "year": 2023,
     "features": ["Autopilot", "GPS", "Bluetooth", "Fast Charging"],
-    "available": true
+    "available": true,
+    "image": "/images/tesla-model-3.jpg"
   },
   {
     "id": "11",
@@ -162,7 +172,8 @@
     "location": "Lahore",
     "year": 2021,
     "features": ["AC", "Bluetooth"],
-    "available": true
+    "available": true,
+    "image": "/images/toyota-yaris.jpg"
   },
   {
     "id": "12",
@@ -177,7 +188,8 @@
     "location": "Islamabad",
     "year": 2023,
     "features": ["AC", "4WD", "Leather Seats", "Panoramic Roof"],
-    "available": true
+    "available": true,
+    "image": "/images/range-rover.jpg"
   },
   {
     "id": "13",
@@ -192,7 +204,8 @@
     "location": "Karachi",
     "year": 2022,
     "features": ["AC", "Bluetooth", "Cruise Control"],
-    "available": true
+    "available": true,
+    "image": "/images/hyundai-elantra.jpg"
   },
   {
     "id": "14",
@@ -207,7 +220,8 @@
     "location": "Lahore",
     "year": 2020,
     "features": ["AC"],
-    "available": true
+    "available": true,
+    "image": "/images/suzuki-apv.jpg"
   },
   {
     "id": "15",
@@ -222,6 +236,7 @@
     "location": "Islamabad",
     "year": 2022,
     "features": ["Bluetooth", "Fast Charging", "Rear Camera"],
-    "available": true
+    "available": true,
+    "image": "/images/nissan-leaf.jpg"
   }
 ]
