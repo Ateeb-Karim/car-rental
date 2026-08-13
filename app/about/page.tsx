@@ -1,9 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const SHOWROOM_IMAGE =
-  "https://images.unsplash.com/photo-1767907571229-01cf4ba03590?auto=format&fit=crop&w=1600&q=80";
-
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-bg text-text">
@@ -22,11 +19,10 @@ export default function AboutPage() {
         </p>
       </div>
 
-      {/* Real photo — full-bleed showroom shot, matches the Night Drive mood */}
       <div className="relative w-full aspect-21/9 max-h-105 overflow-hidden">
         <Image
-          src={SHOWROOM_IMAGE}
-          alt="A row of vehicles in a dark showroom"
+          src={"/images/background-image.png"}
+          alt={"A row of vehicles in a dark showroom"}
           fill
           className="object-cover"
         />
