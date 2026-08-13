@@ -121,7 +121,7 @@ export default async function CarPage({ params }: CarDetailPageProps) {
             {relatedCars.map((rc) => (
               <Link
                 key={rc.id}
-                href={`/cars/${rc.id}`}
+                href={`/car/${rc.id}`}
                 className="bg-surface border border-border rounded-card p-4 hover:border-accent transition-colors"
               >
                 <p className="font-medium">{rc.name}</p>

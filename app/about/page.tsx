@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
+const SHOWROOM_IMAGE =
+  "https://images.unsplash.com/photo-1767907571229-01cf4ba03590?auto=format&fit=crop&w=1600&q=80";
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-bg text-text">
@@ -12,19 +15,19 @@ export default function AboutPage() {
           Built for people who&apos;d rather drive than wait.
         </h1>
         <p className="text-textMuted mt-4 max-w-2xl leading-relaxed">
-          Drift started as a small fleet of well-maintained cars and a simple
-          idea: renting a car shouldn&apos;t feel like paperwork. Every vehicle
-          in our lineup is inspected, insured, and ready to go — so you can book
-          in minutes and pick up the keys without the usual hassle.
+          Car Rental started as a small fleet of well-maintained cars and a
+          simple idea: renting a car shouldn&apos;t feel like paperwork. Every
+          vehicle in our lineup is inspected, insured, and ready to go — so you
+          can book in minutes and pick up the keys without the usual hassle.
         </p>
       </div>
 
-      <div className="relative w-full aspect-21/9 max-h-105 overflow-hidden">
+      <div className="relative w-full aspect-21/9 max-h-105 overflow-hidden shadow-t-md">
         <Image
-          src={"/images/background-image.png"}
-          alt={"A row of vehicles in a dark showroom"}
+          src={"/images/background-image.jpg"}
+          alt="A row of vehicles in a dark showroom"
           fill
-          className="object-cover"
+          className="object-cover "
         />
         <div className="absolute inset-0 bg-linear-to-t from-bg via-transparent to-transparent" />
       </div>

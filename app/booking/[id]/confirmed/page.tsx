@@ -26,10 +26,10 @@ export default async function BookingConfirmedPage({
   params,
   searchParams,
 }: ConfirmedPageProps) {
-  const paramsID = (await params).id;
+  const { id } = await params;
   const searchParamsData = await searchParams;
 
-  const car = cars.find((c) => c.id === paramsID);
+  const car = cars.find((c) => c.id === id);
 
   if (!car) {
     return (

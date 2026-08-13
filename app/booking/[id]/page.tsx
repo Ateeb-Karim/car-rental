@@ -77,8 +77,18 @@ export default function BookingPage() {
   }
 
   function handleConfirm() {
+    const query = new URLSearchParams({
+      pickupDate: form.pickupDate,
+      returnDate: form.returnDate,
+      pickupLocation: form.pickupLocation,
+      name: form.customer.name,
+      email: form.customer.email,
+      phone: form.customer.phone,
+      days: days.toString(),
+      total: totalPrice.toString(),
+    });
     router.push(
-      `/booking/${encodeURIComponent(params.id)}/confirmed/search/${encodeURIComponent(form.pickupDate)}&returnDate=${encodeURIComponent(form.returnDate)}&pickupLocation=${encodeURIComponent(form.pickupLocation)}&name=${encodeURIComponent(form.customer.name)}&email=${encodeURIComponent(form.customer.email)}&phone=${encodeURIComponent(form.customer.phone)}&days=${encodeURIComponent(days.toString())}&total=${encodeURIComponent(totalPrice.toString())}`,
+      `/booking/${encodeURIComponent(params.id)}/confirmed?${query.toString()}`,
     );
   }
 

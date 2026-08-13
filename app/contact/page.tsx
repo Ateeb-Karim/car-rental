@@ -55,23 +55,20 @@ export default function ContactPage() {
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10 mt-10">
-        {/* Contact info */}
         <div className="flex flex-col gap-5">
-          <InfoItem label="Email" value="support@drift-rentals.com" />
+          <InfoItem label="Email" value="support@car-rentals.com" />
           <InfoItem label="Phone" value="+92 300 1234567" />
           <InfoItem label="Office" value="Islamabad, Pakistan" />
           <InfoItem label="Hours" value="Mon–Sat, 9am–7pm" />
           <div className="relative aspect-4/3 rounded-card overflow-hidden border border-border mt-2">
             <Image
               src={OFFICE_IMAGE}
-              alt="Drift Rentals office building"
+              alt="car rentals office building"
               fill
               className="object-cover"
             />
           </div>
         </div>
-
-        {/* Form */}
         <div className="bg-surface border border-border rounded-card p-6">
           {submitted ? (
             <div className="text-center py-10">
